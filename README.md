@@ -46,5 +46,5 @@ Kode program diatas untuk pencarian arti kata dari kata yang sedang dicari baik 
 
 <hr>
 
-##Demo
+## Demo
 ![](asset/video-demo.gif)

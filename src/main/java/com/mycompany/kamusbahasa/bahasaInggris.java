@@ -129,7 +129,6 @@ public class bahasaInggris extends javax.swing.JFrame {
 
     private void cariButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariButtonActionPerformed
       String inputKata = SearchText.getText();
-     
       dictionary kamus = new dictionary();
       String hasil = kamus.cariLokasi(inputKata);
       String arti = kamus.cariArti(inputKata);
