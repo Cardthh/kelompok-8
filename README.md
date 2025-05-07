@@ -2,6 +2,11 @@
 
 <h4 align="center">Simple Application dictionary using Hash Table.</h4>
 
+## Anggota Kelompok 
+ - Adi Esa Putra - 23552011230
+ - Indra Hermawan - 23552011372
+ - Gita Aulia Hafid - 23552011050
+
 ## Penjelasan Kode Program
 ```bash
     private void cariButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
