@@ -30,18 +30,22 @@ public class bahasaInggris extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         indexAt = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        meaningText = new javax.swing.JTextField();
         SearchText = new javax.swing.JTextField();
         cariButton = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 51));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Cari Kata ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 94, -1, -1));
 
         jLabel2.setText("KAMUS BAHASA INGGRIS");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(134, 33, -1, -1));
 
         jLabel3.setText("Terletak Di ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 155, -1, -1));
 
         indexAt.setEnabled(false);
         indexAt.addActionListener(new java.awt.event.ActionListener() {
@@ -49,16 +53,14 @@ public class bahasaInggris extends javax.swing.JFrame {
                 indexAtActionPerformed(evt);
             }
         });
-
-        jLabel4.setText("Arti Kalimat");
-
-        meaningText.setEnabled(false);
+        getContentPane().add(indexAt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 148, 267, 86));
 
         SearchText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SearchTextActionPerformed(evt);
             }
         });
+        getContentPane().add(SearchText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 87, 267, 30));
 
         cariButton.setText("Cari");
         cariButton.addActionListener(new java.awt.event.ActionListener() {
@@ -66,62 +68,25 @@ public class bahasaInggris extends javax.swing.JFrame {
                 cariButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(cariButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 240, 128, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(134, 134, 134)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(indexAt)
-                            .addComponent(meaningText)
-                            .addComponent(SearchText, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(57, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(cariButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(129, 129, 129))
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 460, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2)
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(SearchText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(indexAt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(meaningText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
-                .addComponent(cariButton)
-                .addContainerGap(15, Short.MAX_VALUE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 290, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 290));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void indexAtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_indexAtActionPerformed
-
-        
-    }//GEN-LAST:event_indexAtActionPerformed
 
     private void SearchTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchTextActionPerformed
         // TODO add your handling code here:
@@ -132,9 +97,13 @@ public class bahasaInggris extends javax.swing.JFrame {
       dictionary kamus = new dictionary();
       String hasil = kamus.cariLokasi(inputKata);
       String arti = kamus.cariArti(inputKata);
-      indexAt.setText(hasil);
-      meaningText.setText(arti);
+      
+      indexAt.setText(hasil + "\n" +  "\n" + arti);
     }//GEN-LAST:event_cariButtonActionPerformed
+
+    private void indexAtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_indexAtActionPerformed
+
+    }//GEN-LAST:event_indexAtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -178,7 +147,6 @@ public class bahasaInggris extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField meaningText;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
